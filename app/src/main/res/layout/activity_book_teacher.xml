@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="seek.zz.uidemo.activity.BookTeacherActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_top_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_card_info"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/card_bg">
+
+        <seek.zz.uidemo.imageview.CircleImageView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:src="@drawable/default_boy_use_image"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_font_color"
+            android:text="Meng"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_font_color"
+            android:text="五年级   ¥180.00/时"/>
+
+        <ImageView
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/phone"
+            android:background="@drawable/image_bg"/>
+
+
+        <RadioGroup
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/text_font_color"
+                android:layout_height="match_parent"
+                android:text="20小时"
+                android:background="@drawable/text_bg_selector"/>
+
+            <RadioButton
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/text_font_color"
+                android:layout_height="match_parent"
+                android:text="180小时"
+                android:background="@drawable/text_bg_selector"/>
+
+            <RadioButton
+                android:layout_margin="@dimen/dp_5"
+                android:layout_width="0dp"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/text_font_color"
+                android:layout_height="match_parent"
+                android:text="280小时"
+                android:background="@drawable/text_bg_selector"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:layout_marginRight="@dimen/dp_80"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="自定义输入"
+                android:inputType="number"
+                android:textColor="@color/text_font_color"
+                android:textSize="14sp"
+                android:textColorHint="@color/edit_text_hint_font_color"
+                android:background="@drawable/edit_text_bg"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小时"
+                android:textColor="@color/text_font_color"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥3600.00"
+            android:textSize="32sp"
+            android:textColor="@color/text_font_color"
+            android:layout_marginBottom="@dimen/dp_60"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/ll_card_info"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/negative_dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/text_font_color"
+        android:text="预约老师"/>
+
+
+
+</RelativeLayout>
