@@ -180,6 +180,19 @@
                 android:textColor="@color/text_font_color"/>
 
             <TextView
+                android:id="@+id/sign_in"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textSize="18sp"
+                android:textColor="@color/text_font_color"/>
+
+            <TextView
                 android:id="@+id/animation_3d"
                 android:layout_marginTop="10dp"
                 android:paddingTop="5dp"

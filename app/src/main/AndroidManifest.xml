@@ -20,7 +20,8 @@
         <activity
             android:name=".activity.BookTeacherActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".activity.Animation3DActivity"></activity>
+        <activity android:name=".activity.Animation3DActivity" />
+        <activity android:name=".activity.SignInActivity"></activity>
     </application>
 
 </manifest>
