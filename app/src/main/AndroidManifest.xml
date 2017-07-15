@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.UserInfoActivity" />
-        <activity android:name=".activity.BookTeacherActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".activity.BookTeacherActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.Animation3DActivity"></activity>
     </application>
 
 </manifest>

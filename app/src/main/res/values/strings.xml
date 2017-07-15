@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">UIDemo</string>
+
+    <!--教师端-->
+    <string name="teacher">--- 教师端 ---</string>
+    <string name="user_info">教师个人中心</string>
+    <string name="animation_3D">3D旋转动画</string>
+    <string name="teachers_student">学生</string>
+    <string name="course_manager">课程管理</string>
+
+    <!--学生端-->
+    <string name="student">--- 学生端 ---</string>
+    <string name="student_info">学生个人中心</string>
+    <string name="course_live">课程直播</string>
+    <string name="book_teacher">预约老师</string>
+    <string name="FTEnglishLive">方糖英语直播</string>
+    <string name="outdoor_live">户外直播</string>
+
+    <!--登录注册-->
+    <string name="comment">--- 注册和登录 ---</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+
+
+
 </resources>
