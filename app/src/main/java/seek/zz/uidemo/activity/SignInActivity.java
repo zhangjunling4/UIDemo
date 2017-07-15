@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.joybar.librarycalendar.data.CalendarDate;
 import com.joybar.librarycalendar.fragment.CalendarViewFragment;
@@ -26,11 +27,13 @@ public class SignInActivity extends AppCompatActivity implements
         CalendarViewFragment.OnDateClickListener,
         CalendarViewFragment.OnDateCancelListener {
     private TextView tv_date;
-    private boolean isChoiceModelSingle = false;
+    private boolean isChoiceModelSingle = true;//设置是单选（true）还是多选（false）
     private List<CalendarDate> mListDate = new ArrayList<>();
 
     private ImageView ivBack;
     private TextView tvTitle;
+
+    private TextView tvSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +56,16 @@ public class SignInActivity extends AppCompatActivity implements
         ivBack = (ImageView) findViewById(R.id.back);
         tvTitle = (TextView) findViewById(R.id.tv_top_title);
         tvTitle.setText(getResources().getString(R.string.sign_in));
+        tvSignIn = (TextView) findViewById(R.id.sign_in);
+
+        tvSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String data = tv_date.getText().toString().trim();
+                Toast.makeText(SignInActivity.this, data + "签到成功", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
     private void initFragment(){
@@ -113,7 +126,7 @@ public class SignInActivity extends AppCompatActivity implements
                 break;
             }
         }
-        tv_date.setText(listToString(mListDate));
+//        tv_date.setText(listToString(mListDate));
     }
 
     @Override
