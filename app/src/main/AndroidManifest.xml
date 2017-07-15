@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.UserInfoActivity" />
-        <activity android:name=".activity.BookTeacherActivity"></activity>
+        <activity android:name=".activity.BookTeacherActivity"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
