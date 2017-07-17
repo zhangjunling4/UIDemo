@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.shrinkage).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShrinkageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
