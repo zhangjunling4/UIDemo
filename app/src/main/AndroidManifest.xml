@@ -24,6 +24,8 @@
         <activity android:name=".activity.SignInActivity" />
         <activity android:name=".navigationbar.NavigationBarActivity" />
         <activity android:name=".activity.ShrinkageActivity"></activity>
+        <activity android:name=".animation.demo.AnimationActivity"/>
+        <activity android:name=".animation.demo.NextActivity"/>
     </application>
 
 </manifest>

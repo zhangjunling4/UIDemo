@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import seek.zz.uidemo.R;
+import seek.zz.uidemo.animation.demo.AnimationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.shrinkage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ShrinkageActivity.class);
+                Intent intent = new Intent(MainActivity.this, AnimationActivity.class);
                 startActivity(intent);
             }
         });
